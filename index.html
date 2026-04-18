@@ -60,10 +60,20 @@
         }
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-wDDvgfU0.js"></script>
+    <script type="module" crossorigin src="/assets/index-tk4CLt7n.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BOdm_8uL.css">
   </head>
   <body>
+    <!-- SPA redirect restore (GitHub Pages 404 fix) -->
+    <script>
+      (function(){
+        var r = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (r && r !== location.pathname) {
+          history.replaceState(null, null, r);
+        }
+      })();
+    </script>
     <div id="root"></div>
   </body>
 </html>
